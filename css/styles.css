@@ -127,7 +127,7 @@ header nav {
 }
 
 header nav ul.flex {
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -157,4 +157,114 @@ header nav ul li a {
     text-decoration: none;
 }
 
+#header-logo-mobile {
+    display: none;
+}
+
+#search {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+    width: auto;
+    padding: 0;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    columns: #fff;
+}
+
+#hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 1rem;
+    display: none;
+}
+
+#hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+#hero-slider .hero-slide-item {
+    position: relative;
+    height: 895px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+#hero-slider .hero-slide-item .youtube-button {
+    background: #233EDE;
+    padding: 1.2rem 1.45rem;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#hero-slider .hero-slider-marketing {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -100px auto 0;
+}
+
+#hero-slider .slick-dots {
+    bottom: 35px;
+}
+
+#hero-slider .slick-dots li button::before {
+    color: #fff;
+    opacity: 1;
+    padding: 2px 2px 2px 3px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+}
+
+#hero-slider .slick-dots li.slick-active button:before {
+    border-color: #fff;
+}
 /* end: hero section styles */
+
+/* start: features section style */
+#features .box {
+    width: 31%;
+}
+
+#features .box > img {
+    width: 100%;
+}
+
+#features .box .feature-info-container {
+    position: relative;
+}
+
+#features .box .icon {
+    position: relative;
+    margin: 0 auto;
+    background: #233EDE;
+    border-radius: 45px;
+    top: -35px;
+    width: 88px;
+    height: 88px;
+    line-height: 83px;
+    text-align: center;
+}
+
+#features .box .icon img {
+    vertical-align: middle;
+}
+/* end: features section style */
+
+/* start: services section styles */
+
+/* end: services section styles */
