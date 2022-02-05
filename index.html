@@ -286,7 +286,7 @@
     </footer>
 
     <div id="search-container">
-        <span id="search-container-close" class="fa fa-times"></span>
+        <span id="search-container-hide" class="fa fa-times"></span>
         <h3>Search</h3>
         <div class="search-container-input">
             <input type="text" name="search" placeholder="Search this site" />
@@ -348,8 +348,61 @@
                 //          infinite: true,
                 //      }
                 //  }
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 530,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false
+                    }
+                }
                 ]
-            })
+            });
+
+            // initialize event handling
+            hamburgerMenu.on('click', () => {
+                headerNav.toggle();
+            });
+
+            search.on('click', () => {
+                searchContainer.css({
+                    'opacity': '1',
+                    'visibility': 'visible',
+                    'z-index': '100'
+                });
+            });
+
+            searchContainerHide.on('click', () => {
+                searchContainer.css({
+                    'opacity': '0',
+                    'visibility': 'hidden',
+                    'z-index': '0'
+                });
+            });
+
+            youtubeButton.on('click', () => {
+                videoFrame.css({
+                    'opacity': '1',
+                    'visibility': 'visible',
+                    'z-index': '100'
+                });
+            });
+
+            videoFrameHide.on('click', () => {
+                videoFrame.css({
+                    'opacity': '0',
+                    'visibility': 'hidden',
+                    'z-index': '0'
+                });
+
+                embedVideo.prop('src', embedVideo.prop('src'));
+            });
         });
     </script>
 </body>
